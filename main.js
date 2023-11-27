@@ -22,9 +22,38 @@ function isFailing(grade){
 function isAcing(grade){
   return grade > 92
 }
-function isStudent(student){
-  return "student"
+function isStudent(name){
+  return name === "student"
 }
+function isTeacher(name){
+  return name === "teacher"
+}
+function isAdmin(name){
+  return name === "admin"
+}
+function isElementary(level){
+  return level === "elementary"
+}
+function areDifferentPeople(name1, name2){
+  return name1 !== name2
+}
+
+function isMiddleSchoolTeacher(role, level){
+  return role === "teacher" && 6 <= level && level <= 8
+}
+
+function notAnElementarySchoolAdministrator(level, role){
+  return level !== "elementary" || role !== "admin"
+}
+
+
+
+
+
+
+
+
+
 
 /********************************************************************************************
  * CODE BELOW IS FOR EXPORTING THE VARIABLES AND FUNCTIONS YOU WROTE ABOVE TO MAIN.TEST.JS. *
